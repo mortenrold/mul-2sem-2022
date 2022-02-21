@@ -1,0 +1,6 @@
+.btn-morten {
+    background: yellow;
+}
+.btn-morten:hover {
+    background: lightyellow;
+}
