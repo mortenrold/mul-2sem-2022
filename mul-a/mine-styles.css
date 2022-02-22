@@ -1,0 +1,8 @@
+.btn-morten {
+    background: lightcoral;
+    color: white;
+}
+.btn-morten:hover {
+    background: coral;
+    color: white;
+}
