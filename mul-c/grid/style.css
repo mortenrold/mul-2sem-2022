@@ -1,0 +1,18 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+}
+.container {
+    display: grid;
+    /* "fr" (fraction) er en måleenhed, der fortæller, hvor mange andele af bredden en kolonne skal fylde */
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 15px;
+}
+
+/* pilen ">" betyder, at alle div'er, der er direkte efterkommere af container bliver stylet */
+.container>div {
+    background: green;
+    color: white;
+    /* "em" er en relativ måleenhed - 2em er dobbelt så stor som udgangspunktet */
+    font-size: 2em;
+    padding: 1em;
+}
