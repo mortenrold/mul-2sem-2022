@@ -1,0 +1,11 @@
+/* ">" betyder, at det kun er de div'er der er direkte efterkommere, der bliver grønne */
+body {
+    font-family: helvetica, arial, sans-serif;
+}
+
+.container>div {
+    background: green;
+    color: white;
+    font-size: 2em;
+    padding: 1em;
+}

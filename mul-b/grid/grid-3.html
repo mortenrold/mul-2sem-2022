@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            grid-template-rows: 1fr 2fr;
+            gap: 15px;
+        }
+        .fem {
+            /* denne div skal starte på linje 2 (starten af kolonne 2) og slutte på linje 4 (hvor tredje kolonne slutter */
+            grid-column: 2/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="et">1</div>
+        <div class="to">2<br>2</div>
+        <div class="tre">3</div>
+        <div class="fire">4</div>
+        <div class="fem">5</div>
+    </div>
+</body>
+</html>
