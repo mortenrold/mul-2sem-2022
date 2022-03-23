@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #ddd;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-areas:
+                "logo logo nav nav nav"
+                ". citat citat citat ."
+                "kat-1 kat-2 kat-3 kat-4 kat-5"
+            ;
+            gap: 15px;
+            padding: 15px;
+            width: 960px;
+            margin: 0 auto;
+            background: white;
+        }
+        .logo {
+            grid-area: logo;
+            background: #ddd;
+        }
+        .nav {
+            grid-area: nav;
+            background: #ddd;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 40px;
+        }
+        .citat {
+            grid-area: citat;
+            border: 2px solid #ddd;
+        }
+        .kat-1 {
+            grid-area: kat-1;
+            background: lightcoral;
+        }
+        .kat-2 {
+            grid-area: kat-2;
+            background: lightblue;
+        }
+        .kat-3 {
+            grid-area: kat-3;
+            background: lightgoldenrodyellow;
+        }
+        .kat-4 {
+            grid-area: kat-4;
+            background: lightseagreen;
+        }
+        .kat-5 {
+            grid-area: kat-5;
+            background: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <p>Dagens citat</p>
+        </div>
+        <div class="nav">
+            <a href="#">Forside</a>
+            <a href="#">Arkiv</a>
+            <a href="#">Shop</a>
+            <a href="#">Kontakt</a>
+        </div>
+        <div class="citat">
+            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vero perferendis commodi, repellat illum vitae consequatur ipsum dolorem error numquam cumque fugiat architecto quam asperiores.</blockquote>
+        </div>
+        <div class="kat-1">
+            <p>Citater om noget</p>
+        </div>
+        <div class="kat-2">
+            <p>Citater om noget</p>
+        </div>
+        <div class="kat-3">
+            <p>Citater om noget</p>
+        </div>
+        <div class="kat-4">
+            <p>Citater om noget</p>
+        </div>
+        <div class="kat-5">
+            <p>Citater om noget</p>
+        </div>
+    </div>
+</body>
+</html>

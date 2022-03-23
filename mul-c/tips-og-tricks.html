@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, h2 {
+            font-family: sans-serif;
+            margin-top: 50px;
+        }
+        .shadowbox {
+            height: 100px;
+            width: 300px;
+            background: greenyellow;
+            /* vandret lodret feather farve */
+            box-shadow: 3px 3px 3px rgba(0,0,0,0.3); 
+            border-radius: 20px 0;
+        }
+        .gradientbox {
+            height: 100px;
+            width: 300px;
+            background: linear-gradient(lightblue, rgb(88, 148, 168));
+        }
+        .rotatebox {
+            height: 100px;
+            width: 300px;
+            background: crimson;
+            transform: rotate(-20deg);
+        }
+        .animatebox {
+            height: 100px;
+            width: 300px;
+            background: darkmagenta;
+            transition: width 1s;
+        }
+        .animatebox:hover {
+            width: 500px;
+        }
+        .shadowtext {
+            font-size: 3em;
+            color: goldenrod;
+            text-shadow: 0px 0px 3px rgba(0,0,0,.3);
+        }
+        .columntext {
+            font-family: georgia, serif;
+            column-count: 3;
+            text-align: justify;
+            column-gap: 30px;
+            line-height: 140%;
+        }
+        .billedbox {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .billedbox img {
+            width: 100%;
+            height: auto;
+            filter: grayscale(100%);
+            transition: filter .4s;
+        }
+        .billedbox img:hover {
+            filter: grayscale(0%);
+        }
+        .billedbox a {
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tips og tricks</h1>
+    <h2>Runde hjørner + skygge</h2>
+    <div class="shadowbox"></div>
+    <h2>Gradient</h2>
+    <div class="gradientbox"></div>
+    <h2>Rotate</h2>
+    <div class="rotatebox"></div>
+    <h2>Animation</h2>
+    <div class="animatebox"></div>
+    <h2>Tekst-effekt</h2>
+    <h1 class="shadowtext">Tekst med skygge</h1>
+    <h2>Tekst i kolonner</h2>
+    <p class="columntext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo vel dolorum nam accusantium sed suscipit obcaecati facere doloribus qui exercitationem error odio perspiciatis necessitatibus aperiam laborum dolorem, unde provident nobis! Consectetur ipsum adipisci repellendus! Accusamus repellat temporibus voluptatem hic fuga laboriosam, rerum iste harum explicabo delectus blanditiis neque reiciendis vero, dolore quam laborum quia excepturi officiis perferendis ipsa cumque sit impedit maiores doloremque! At a hic quae incidunt maxime, voluptate necessitatibus. Nihil dolore nesciunt nostrum, accusantium dolor, temporibus sed beatae repudiandae magni animi voluptatum sapiente error facilis nulla, tempora deserunt odit quibusdam? Qui dignissimos dolorem sapiente quidem officiis veritatis adipisci.</p>
+    <h2>Billeder s/h eller farve?</h2>
+    <div class="billedbox">
+        <a href="#"><img src="img/bil-1.jpg" alt="Flot bil"></a>
+        <a href="#"><img src="img/bil-2.jpg" alt="Flot bil"></a>
+        <a href="#"><img src="img/car-3.jpg" alt="Flot bil"></a>
+    </div>
+</body>
+</html>
