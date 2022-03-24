@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips og tricks</title>
+    <style>
+        h1, h2 {
+            font-family: sans-serif;
+            margin-top: 50px;
+        }
+        .skygger {
+            height: 100px;
+            width: 300px;
+            background: aqua;
+            /* fra-venstre, fra-top, størrelse, farve */
+            box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+            border-radius: 20px 0;
+        }
+        .gradient {
+            height: 100px;
+            width: 300px;
+            background: linear-gradient(lightcoral, rgb(185, 100, 100));
+        }
+        .rotate {
+            height: 100px;
+            width: 300px;
+            background: lightgreen;
+            transform: rotate(-20deg);
+        }
+        .transition {
+            height: 100px;
+            width: 300px;
+            background: goldenrod;
+            transition: width .3s, background .3s;
+        }
+        .transition:hover {
+            width: 600px;
+            background: lightgoldenrodyellow;
+        }
+        .tekstskygge {
+            font-size: 4em;
+            color: hotpink;
+            text-shadow: 0px 0px 6px rgba(0,0,0,0.3);
+        }
+        .kolonner {
+            column-count: 3;
+            column-gap: 30px;
+            font-family: georgia, serif;
+            line-height: 140%;
+            text-align: justify;
+        }
+        .biler {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .biler img {
+            width: 30%;
+            filter: grayscale(100%);
+            transition: filter, .5s;
+        }
+        .biler img:hover {
+            filter: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tips og tricks med CSS</h1>
+    <h2>Skygger og runde hjørner</h2>
+    <div class="skygger"></div>
+    <h2>Gradient</h2>
+    <div class="gradient"></div>
+    <h2>Rotate</h2>
+    <div class="rotate"></div>
+    <h2>Transition</h2>
+    <div class="transition"></div>
+    <h2>Skygge på tekst</h2>
+    <h1 class="tekstskygge">Skygge på tekst</h1>
+    <h2>Tekst i kolonner</h2>
+    <p class="kolonner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iure voluptate eius, consequatur fuga aliquam adipisci voluptas sit architecto dolores placeat, molestias facere ipsum incidunt debitis non alias. Reiciendis maxime in quae! Quo dolorem ratione, ab inventore aut cum deleniti officiis rerum ipsum distinctio dolores reiciendis esse sed numquam atque veritatis nihil eos, recusandae cupiditate ullam consequuntur sint? Ad quia repellendus laudantium sint repudiandae quaerat asperiores ratione odit mollitia qui ab vel hic eius placeat voluptates eos quae doloremque provident, modi debitis ipsam. Fugiat adipisci minus debitis iste culpa quidem eligendi, expedita, vero et quasi quaerat, dicta dolorem nulla ab!</p>
+    <h2>Billede s/h eller farve?</h2>
+    <div class="biler">
+        <img src="img/bil-1.jpg" alt="Flot bil">
+        <img src="img/bil-2.jpg" alt="Flot bil">
+        <img src="img/bil-3.jpg" alt="Flot bil">
+    </div>
+</body>
+</html>

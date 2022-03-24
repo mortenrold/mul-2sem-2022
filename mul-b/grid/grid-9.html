@@ -42,6 +42,30 @@
         .seks {
             grid-area: footer;
         }
+        /* tablet */
+        @media screen and (max-width: 864px) {
+            .container {
+                grid-template-areas: 
+                "logo nav nav"
+                "billede billede billede"
+                "banner1 banner1 banner2"
+                "footer footer footer"
+            ;
+            }
+        }
+        /* mobile */
+        @media screen and (max-width: 552px) {
+            .container {
+                grid-template-areas: 
+                "logo"
+                "billede"
+                "banner1"
+                "banner2"
+                "footer"
+                "nav"
+            ;
+            }
+        }
     </style>
 </head>
 <body>
