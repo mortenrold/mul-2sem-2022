@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .container {
+            display: grid;
+            gap: 15px;
+            padding: 15px;
+            grid-template-areas:
+                "logo    nav     nav     nav"
+                "billede billede banner1 banner1"
+                "billede billede banner2 banner2"
+                "footer  footer  footer  footer";
+        }
+        .one {
+            grid-area: logo;
+        }
+        .two {
+            grid-area: nav;
+        }
+        .three {
+            grid-area: billede;
+        }
+        .four {
+            grid-area: banner1;
+        }
+        .five {
+            grid-area: banner2;
+        }
+        .six {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+    </div>
+</body>
+</html>

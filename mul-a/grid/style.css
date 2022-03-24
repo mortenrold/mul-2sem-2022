@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ">" betyder, at det kun er containerens direkte efterkommere, der bliver påvirket */
+.container>div {
+    background: green;
+    color: white;
+    font-size: 3em;
+    padding: 1em;
+    font-family: helvetica, arial, sans-serif;
+}
